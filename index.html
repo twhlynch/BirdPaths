@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Bird Paths</title>
+    <meta name="description" content="Bird Paths Tool">
+    <meta name="author" content="twhlynch">
+
+    <meta property="og:title" content="Bird Paths">
+    <meta property="og:description" content="Bird Paths Tool">
+    <meta property="og:site_name" content="Bird Paths">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://twhlynch.me/BirdPaths">
+    <meta property="og:image" content="http://twhlynch.me/BirdPaths/thumb.png">
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="apple-touch-startup-image" href="favicon.png" type="image/png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@twhlynch">
+    <meta name="twitter:title" content="twhlynch">
+    <meta name="twitter:description" content="Bird Paths Tool">
+    <meta name="twitter:creator" content="@twhlynch">
+    <meta name="twitter:image" content="thumb.png">
+    <meta name="twitter:url" content="http://twhlynch.me/BirdPaths">
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BDS57RBQ3Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BDS57RBQ3Q');
+    </script>
+
+	<script src="globals.js" defer></script>
+	<script src="svg.js" defer></script>
+	<script src="events.js" defer></script>
+	<script src="main.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<menu id="controls">
+		<div id="buttons">
+			<button id="flip">flip</button>
+			<button id="rename">rename</button>
+			<button id="mode">mode</button>
+			<button class="btn" id="s">S</button>
+			<button class="btn" id="circle">O</button>
+			<button class="btn" id="line">|</button>
+		</div>
+		<div id="tasks">
+		</div>
+		<div id="add-task">+</div>
+		<input type="range" id="magnitude" value="5" step="0.01" min="0" max="10">
+	</menu>
+	<div id="svg-container"></div>
+</body>
+</html>
